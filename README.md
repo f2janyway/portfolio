@@ -68,6 +68,7 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
  
  ### 기타 설명
  * 액티비티 수 : 1 
+ * 개발 기간 : 7 일
  * 사용자수 한명... 저...
    - 일반적으로 사람들이 타이머를 잘 사용안하는 것 같음
    - 구글 어시스턴트가 훨씬 편함...
@@ -93,4 +94,5 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
 ## 기타
 * 모두 git 연동하여 작업
     - 지금껏 revert 한번 사용.
+    
 <br><br><br>
