@@ -1,6 +1,6 @@
 # android_portfolio
 
-bible app link : https://play.google.com/store/apps/details?id=com.box.bible
+bible app link : https://play.google.com/store/apps/details?id=com.box.bible <br>
 timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
 
 ### index
@@ -14,18 +14,21 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
  ![Alt Text](https://github.com/yegyu/android_portfolio/blob/master/gif/b1.gif)
  <br>
  >RoomDatabase + Dao -> 간편 하이라이트 기능
- <br><br>
+ <br>
 
  ![Alt Text](https://github.com/yegyu/android_portfolio/blob/master/gif/b2.gif)
  <br>
  >기타 설정 기능 + 검색
- <br><br>
+ <br>
  
  ![Alt Text](https://github.com/yegyu/android_portfolio/blob/master/gif/b3.gif)
  <br>
  >기본 기능
+ >알고리즘 사용
+ > > 검색어 색칠하기 
+ > > 검색어는 한글인데 한자가 포함되어 있기에 적용함
  <br>
- >알고리즘을 사용한 부분 : 검색어 색칠하기; 한자가 있어서 머리를 좀 써야 했음
+ 
  
  <br><br>
  ### 기타 설명
@@ -40,7 +43,9 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
   
 
 * 최대한 사용자가 편하고 유용하게 사용하기를 바라는 마음으로 기능 구현함
-* 
+* firebase 및 Crashlytics 연동
+
+
  
  
  
