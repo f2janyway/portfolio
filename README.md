@@ -88,7 +88,7 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
 * mvvm + room + livedata 아직 익숙하지는 않으나 구현 가능
 * dagger (DI + Ioc) 익숙하지 않으나 문서를 쭉 봐본 결과 스프링과 매우 유사함을 느낌
 * Test 역시 익숙하지 않으나 연습이 많이 필요할 것 같음
-    - Junit assertThat, assertEqual 은 사용 해봄
+    - JUnit assertThat, assertEqual 은 사용 해봄
     - instrument test는 아직 해보지 않음 (espresso 등등)
 
 ## 기타
