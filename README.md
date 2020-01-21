@@ -85,14 +85,23 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
  
 ## Android Study
 * 주 공부처 : Android Developer 문서 및 codelabs.developers 그리고 구글 코드 기타 블로그 등등
-* mvvm + room + livedata 아직 익숙하지는 않으나 구현 가능
-* dagger (DI + Ioc) 익숙하지 않으나 문서를 쭉 봐본 결과 스프링과 매우 유사함을 느낌
-* Test 역시 익숙하지 않으나 연습이 많이 필요할 것 같음
+* mvvm + room + livedata 구현 가능
+* dagger (DI + Ioc) 익숙하지 않으나 문서를 쭉 봐본 결과 스프링과 매우 유사함을 느낌(당연히)
+* Test 연습이 많이 필요
     - JUnit assertThat, assertEqual 은 사용 해봄
     - instrument test는 아직 해보지 않음 (espresso 등등)
 
 ## 기타
 * 모두 git 연동하여 작업
     - 지금껏 revert 한번 사용.
+* java 사용 능력 : 중 (적절히 구글링 필요한 수준)
+* kotlin 사용 능력 : 중 (자바보다 좀 낮은 중)
+* 기타 기본 언어 사용 가능 
+    - javacript 및 javascript 라이브러리(vue x, angular x)
+    - python (크롤링, tensorflow)
+    - C/C++ 포인터 이해하고 코드 볼 수 있을 정도(거의 사용 안함)
+* 네트워크/운영체제 이론 부족
+
+    
     
 <br><br><br>
