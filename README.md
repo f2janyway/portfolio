@@ -90,6 +90,7 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
 * Test 연습이 많이 필요
     - JUnit assertThat, assertEqual 은 사용 해봄
     - instrument test는 아직 해보지 않음 (espresso 등등)
+* Glide 사용
 
 ## 기타
 * 모두 git 연동하여 작업
