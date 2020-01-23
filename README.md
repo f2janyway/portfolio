@@ -41,7 +41,7 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
 
 * 액티비티 수: 4
 * 프래그먼트 수 : 2 ( in viewpager2 )
-* 초기 개발 시간 : 안드로이드 처음 시작한 이후 10일 ( java )
+* 초기 개발 시간 : 안드로이드 처음 시작한 이후 10일 19/9/11-21 ( java )
 * 추가 기능 더한 순서 : 
   - 계속 읽기 책갈피 기능(SQLite) 
   - 메인화면(제목들) : 리스트뷰-> 리사이클러뷰 -> view pager2 (첫번째 gif)
@@ -68,7 +68,7 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
  
  ### 기타 설명
  * 액티비티 수 : 1 
- * 개발 기간 : 7 일
+ * 개발 기간 : 7 일 19/12/2-9
  * 사용자수 한명... 저...
    - 일반적으로 사람들이 타이머를 잘 사용안하는 것 같음
    - 구글 어시스턴트가 훨씬 편함...
