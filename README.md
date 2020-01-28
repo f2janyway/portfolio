@@ -17,7 +17,7 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
  5000원 앱과 그냥 종이 한자 성경 스캔해 놓은것은 있었으나 사용하기 불편했음<br>
  사전 기능도 없음<br>
  
- ![Alt Text](https://github.com/yegyu/android_portfolio/blob/master/gif/b1.gif)
+ ![Alt Text](https://github.com/yegyu/android_portfolio/blob/master/gif/b1_1.gif)
  <br>
  >ViewModel  + LiveData + RoomDatabase + Dao -> 간편 하이라이트 기능
  <br>
