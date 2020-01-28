@@ -19,7 +19,7 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
  
  ![Alt Text](https://github.com/yegyu/android_portfolio/blob/master/gif/b1.gif)
  <br>
- >RoomDatabase + Dao -> 간편 하이라이트 기능
+ >ViewModel  + LiveData + RoomDatabase + Dao -> 간편 하이라이트 기능
  <br>
 
  ![Alt Text](https://github.com/yegyu/android_portfolio/blob/master/gif/b2.gif)
