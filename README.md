@@ -10,6 +10,8 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
  
  ## 국한문 성경 
  * 언어 : <b>자바 : 코틀린 = 8 : 2</b> 
+ * (20/1/28~) ViewModel + LiveData + Room (하이라이트 부분) 
+ 
  ### 만든 이유
  1. 한자성경을 읽고 싶었으나 없어서<br>
  5000원 앱과 그냥 종이 한자 성경 스캔해 놓은것은 있었으나 사용하기 불편했음<br>
