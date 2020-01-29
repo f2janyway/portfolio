@@ -59,6 +59,7 @@ timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
 <br><br>
 ## 멀티타이머
  * 언어 : <b>코틀린</b> 
+ * Activity + Service + BroadCastReceiver
 ### 만든 이유
 1. 구글 시계안의 타이머가 너무 불편해서
 2. 왜 이런 타이머는 없을까 싶어서... 
