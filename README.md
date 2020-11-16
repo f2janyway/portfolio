@@ -22,7 +22,7 @@ github link : https://github.com/f2janyway
 
 ## 20/11/16작성
 주 언어:kotlin<br>
-java > javascript > python> c++ >>> c(그냥 볼 줄은 알고 좀 사용할 수있는것들)<br>
+java > javascript > python> c++ > c(그냥 볼 줄은 알고 좀 사용할 수있는것들)<br>
 linux,HTML,sql<br><br>
 (익숙:레퍼런스 안보고는 다 할수 있는것은 아니나 많이 사용해서 익숙해진 정도;익숙하다고 제대로 아는것은 아님)<br>
 (초보:자유자재로 하지는 못하고 좀 레퍼런스 보면서 구현 가능한)<br><br>
