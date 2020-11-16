@@ -50,7 +50,7 @@ Rx~ (많이 사용 안해봄;사실 안드로이드 개발하면서 크게 필�
 Coroutine (초보와 익숙 사이)<br>
 Flow or Sequence(초보와 익숙 사이)<br><br>
 
-알고리즘(프래그래머스 level-2 간간히 푸는 정도)
+알고리즘(프래그래머스 level-2 간간히 푸는 정도)<br>
 DS(기초는 있지 않나 생각하는데 모르는것 있으면 그때 그때 찾아봄)
  - 일반적인 개발에서 알고리즘보다 더 중요하다고 생각함
 
@@ -237,12 +237,5 @@ inline fun <T : OilDataInterface> retrofitCallback(
  
  
 ## Android Study
-(20/1)
 * 주 공부처 : Android Developer 문서 및 codelabs.developers 그리고 구글 코드 기타 블로그 등등
-* viewModel (livedata ) + repository (retrofit2, room) 구조를 구글에서 알려주는데 그 효용을 느낌. Test는 잘 못하지만 유지보수성에 편리함 
-* dagger (오일뱅크 프로젝트에 적용)
-* Test 연습이 많이 필요
-    - JUnit assertThat, assertEqual 은 사용 해봄
-    - instrument test는 아직 해보지 않음 (espresso 등등)
-
 
