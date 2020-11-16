@@ -1,18 +1,23 @@
 # android_portfolio
-
+## 개인 앱
 bible app link : https://play.google.com/store/apps/details?id=com.box.bible <br>
-timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast
+timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast <br>
+새찬송가 app link : https://play.google.com/store/apps/details?id=com.box.hymn&hl=ko <br>
 
 ### index
  1. bible
  2. multi-timer
- 3. studied
+ 3. 새찬송가
+ 4. study
  
  ## 국한문 성경 
- * 언어 : <b>자바 : 코틀린 = 8 : 2</b> 
+ * 언어 : <b>Java</b>-><b>Java : Kotlin = 9 : 1</b>-> 현재<b>Java : Kotlin = 7.5 : 2.5</b> 
  * (20/1/28~) ViewModel + LiveData + Room (하이라이트 부분) 
+ * (20/9/1~) Repository 추가(Room, SharedPreference)
+ * (20/11/1) 검색쪽(just contains()만 사용)에 fastscroll용으로 customLayout을 만들고 라이브러리를 만듬 [library](https://github.com/f2janyway/custom_view)
  
  ### 만든 이유
+ ()
  1. 한자성경을 읽고 싶었으나 없어서<br>
  5000원 앱과 그냥 종이 한자 성경 스캔해 놓은것은 있었으나 사용하기 불편했음<br>
  사전 기능도 없음<br>
