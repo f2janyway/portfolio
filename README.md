@@ -8,7 +8,9 @@
  2. korean-chinese-Bible
  3. multi-timer
  4. 새찬송가
- 5. (추가자료)국비과정 프로젝트(19/4~19/10 7개월과정) [.Net](https://github.com/yegyu/DotNet)
+ 5. (추가자료)인공지능 전문가 국비과정 프로젝트(19/4~19/10 7개월과정) [.Net](https://github.com/yegyu/DotNet)
+  - 웹+리눅스+하둡+스파크 + 기타 하둡 에코시스템
+  - 웹은 주도적으로 하나 나머지 머신러닝쪽은 따라하는 정도
 
 
 ## 개인 앱
@@ -19,6 +21,7 @@ bible app link : https://play.google.com/store/apps/details?id=com.box.bible <br
 timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast <br>
 새찬송가 app link : https://play.google.com/store/apps/details?id=com.box.hymn&hl=ko <br>
 github link : https://github.com/f2janyway
+첫 library: link(https://github.com/f2janyway/custom_view/blob/master/f2j_custom_view/src/main/java/com/box/f2j_custom_view/VerticalSeekBar.kt)
 
 ## 20/11/16작성
 주 언어:kotlin<br>
@@ -28,9 +31,17 @@ linux,HTML,sql<br><br>
 (초보:자유자재로 하지는 못하고 좀 레퍼런스 보면서 구현 가능한)<br><br>
 
 android(배움처는 거의 android관련 사이트 및 블로그)<br>
+
+Android Components
+- activities,fragments <- 익숙
+- services <- 초보(일반적인 구현만 해봄,알람,notification,push연동)
+- BroadCase Receivers <- 초보(일반적인 구현만 해봄,알람,notification,push연동)
+- Content Providers <- 초보(많이 다뤄보지 않음)
+
 Jetpack
 - viewmodel, livedata, repository, room, navigation, dataBinding <- 익숙
 - workmanager, paging3, cameraX  <- 초보
+
 View
 - cusstomview <- 초보
 - constraintLayout <- 익숙
@@ -45,6 +56,10 @@ API(경험)
 
 Library
 - retrofit2, glide, zxing, socketIO, MPAChart
+
+Gradle,(초보)
+ - 알아서 한다기 보다는 거의 검색해서 필요한것 사용
+Kicc모듈연동
 
 Rx~ (많이 사용 안해봄;사실 안드로이드 개발하면서 크게 필요성을 못느꼈으나 현재 배워야할 필요는 느낌)<br>
 Coroutine (초보와 익숙 사이)<br>
