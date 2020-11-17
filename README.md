@@ -20,7 +20,7 @@
 bible app link : https://play.google.com/store/apps/details?id=com.box.bible <br>
 timer app lick : https://play.google.com/store/apps/details?id=com.box.firecast <br>
 새찬송가 app link : https://play.google.com/store/apps/details?id=com.box.hymn&hl=ko <br>
-github link : https://github.com/f2janyway
+github link : https://github.com/f2janyway<br>
 첫 library: [link](https://github.com/f2janyway/custom_view/blob/master/f2j_custom_view/src/main/java/com/box/f2j_custom_view/VerticalSeekBar.kt)
 
 ## 20/11/16작성
