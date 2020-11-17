@@ -94,6 +94,7 @@ DS(기초는 있지 않나 생각하는데 모르는것 있으면 그때 그때 
 이 후에 몇몇 앱의 유지보수를 맡았고 실상 애플로그인추가한것 외엔 딱히 한게 없다.
 
 ### 첫 SI 프로젝트(지금에는 정말 값진 경험)
+[H 정유사 앱 링크](https://play.google.com/store/apps/details?id=com.hyundaioilbank.android&hl=ko)(11/30 마지막 오픈)
 
 #### 대략 설명 및 느낀점
 - H 정유회사의 앱을 리뉴얼하는 업무(New-Project부터 시작했다.)
