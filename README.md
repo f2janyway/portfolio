@@ -119,7 +119,7 @@ inline fun <T : OilDataInterface> retrofitCallback(
 ) {
     call.enqueue(object : Callback<T> {
         override fun onFailure(call: Call<T>, t: Throwable) {
-            con?.let { toast(context = it,con.getString(R.string.network_fail)) }
+            con?.let { toast(context = it, msg = it.getString(R.string.network_fail)) }
         }
 
         override fun onResponse(call: Call<T>, response: Response<T>) {
