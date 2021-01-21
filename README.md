@@ -33,20 +33,20 @@ linux,HTML,sql<br><br>
 android(배움처는 거의 android관련 사이트 및 블로그)<br>
 
 Android Components
-- activities,fragments <- 익숙
-- services <- 초보(일반적인 구현만 해봄,알람,notification,push연동)
-- BroadCase Receivers <- 초보(일반적인 구현만 해봄,알람,notification,push연동)
-- Content Providers <- 초보(많이 다뤄보지 않음)
+- activities,fragments 
+- services (일반적인 구현만 해봄,알람,notification,push연동)
+- BroadCase Receivers (일반적인 구현만 해봄,알람,notification,push연동)
+- Content Providers (공유, mediaStore접근 등)
 
 Jetpack
-- viewmodel, livedata, repository, room, navigation, dataBinding <- 익숙
-- workmanager, paging3, cameraX  <- 초보
+- viewmodel, livedata, repository, room, navigation, dataBinding 
+- workmanager, paging3, cameraX  
 
 View
-- cusstomview <- 초보
-- constraintLayout <- 익숙
-- MotionLayout <- 초보
-- Transition,Animation <- 초보
+- cusstomview 
+- constraintLayout 
+- MotionLayout 
+- Transition,Animation 
 
 API(경험)
 - kakao,naver,google,apple login
@@ -61,9 +61,9 @@ Gradle,(초보)
  - 알아서 한다기 보다는 거의 검색해서 필요한것 사용
 Kicc모듈연동
 
-Rx~ (많이 사용 안해봄;사실 안드로이드 개발하면서 크게 필요성을 못느꼈으나 현재 배워야할 필요는 느낌)<br>
-Coroutine (초보와 익숙 사이)<br>
-Flow or Sequence(초보와 익숙 사이)<br><br>
+Rx~ (많이 사용 안해봄; 대신 flow를 주로 사용)<br>
+Coroutine <br>
+Flow or Sequence<br><br>
 
 알고리즘(프래그래머스 level-2 간간히 푸는 정도)<br>
 DS(기초는 있지 않나 생각하는데 모르는것 있으면 그때 그때 찾아봄)
@@ -109,27 +109,6 @@ DS(기초는 있지 않나 생각하는데 모르는것 있으면 그때 그때 
 * 처음에 설계를 잘짜놔야 한다는 생각에 파견가기 전에 viewMdoel,dataBinding 을 제네릭으로 하는 추상 BaseActivity,BaseFragment,BaseActivityNoViewModel 등을 공부하고 구현해 두었다.
 * 네트워크 통신(비동기로)을 많이 하기에 retrofit2도 lamda,generic으로 inline function을 만들어 놨다.(이거 만들때 고차함수에 대해 좀 익숙하게 되었다.)
   * 이 activity, retrofit, fragment 들을 generic 으로 만들어 놓고 하니 시간과 코드가 많이 단축됨을 느끼고 개발했다.(아마 더 좋은 설계가 있겠지만 나로는 잘한 시도였다.)
-```kotlin
-//이게 정말 좋은 코드인지는 정확히 모르겠다...inline은 객체생성의 overhead를 막고 crossinline으로 또 인자를 받을수 있는 함수를 사용하기에 편리는 한데
-//이게 정말 성능이 좋은지는 모르겠다. profiler나 디컴파일해서 소스,성능 분석하는 단계가 되진 못했다.
-inline fun <T : OilDataInterface> retrofitCallback(
-    call: Call<T>,
-    con:Context? = null,
-    crossinline remains: (T) -> Unit
-) {
-    call.enqueue(object : Callback<T> {
-        override fun onFailure(call: Call<T>, t: Throwable) {
-            con?.let { toast(context = it, msg = it.getString(R.string.network_fail)) }
-        }
-
-        override fun onResponse(call: Call<T>, response: Response<T>) {
-            val data = response.body()
-            if (data != null)
-                remains(data)
-        }
-    })
-}
-```
 * 입사 후 공부해놓은 dagger와 navigation으로 도움을 많이 받았다.
   * dagger을 이용해 Repository,SnsLogin 를 inject해서 여러군데서 간편히 적용을 시킬수 있었다.(사실 dagger는 사용해보고 싶어서 사용했다.)
   * navigation도 2차 부터(거의 중간) 도입을 시작했다. 맨처음엔 홈화면을 다 BottomNavigationView 와 fragment들도 연결시켜서 각각으 로직을 다 구현했는데 2차 땐 회원가입이 있어서 거기에 navigation을 도입해(이때쯤 적용해볼수 있겠다 싶었다.)덕분에 회원가입 Flow를 간편히 짤 수 있었다. 그리고 이후 fragment가 들어가는 부분에 많이 적용하고 홈화면에도 다시 적용을 했다.
@@ -205,16 +184,16 @@ inline fun <T : OilDataInterface> retrofitCallback(
 <br><br>
 ## 멀티타이머
  * 언어 : <b>코틀린</b> 
- * Activity + Service + BroadCastReceiver
+ * (Single)Activity + Service + BroadCastReceiver
 ### 만든 이유
 1. 구글 시계안의 타이머가 너무 불편해서
 2. 왜 이런 타이머는 없을까 싶어서... 
-3. 쓰레드 공부 하려고
+3. 쓰레드 공부 하려고 -> flow, coroutine으로 구현됨<b>(2021-1-20수정)</b>
 4. Service & BroadCastReceiver 사용해 보려고
+5. test-coverage : 50%
 
 ![Alt Text](https://github.com/yegyu/android_portfolio/blob/master/gif/멀티타이머.gif)
  <br>
-![Alt Text](https://github.com/yegyu/android_portfolio/blob/master/gif/멀티타이머2.gif)
  
  ### 기타 설명
  * 액티비티 수 : 1 
@@ -226,12 +205,10 @@ inline fun <T : OilDataInterface> retrofitCallback(
  * mediaplayer 적용(해당 벨소리로만)
  * vm + livedata + coroutine을 사용하기 적합한 앱
     - 사용자가 있으면 바꿔보고 싶은데 사실 동기 부족...
- * admob 적용 
-    - 이것도 신중해야할 것 같음
- 
  * 의욕적으로 언어도 한 40개국을 적용했으나 번역 프로그램만 만듬...
     - 파이썬 셀레늄으로 구글 번역기로 돌려서 여러나라 언어를 뽑음
     - 구글 스토어에 올릴 때 , 업데이트할 때 용도로 
+    - 영어만 반영<b>(2021-1-20수정)</b>
  * <b>(20/11)</b> 구글 타이머와 비슷하게 원(circle)형 progressbar(seekbar)로 만들어 보려고 customlayout 만들어봄 [library](https://github.com/f2janyway/custom_view/blob/master/f2j_custom_view/src/main/java/com/box/f2j_custom_view/CircleProgress.kt)
  * 아직까지<b>(20/11)</b>이것저것 할게 있어서 손을 못대고 있음.-
  * Thread와 Timer을 사용함. coroutine은 거의 사용안함.
