@@ -116,7 +116,31 @@ DS(기초는 있지 않나 생각하는데 모르는것 있으면 그때 그때 
   * 
 * 많은 수정사항들을 수정하면서 객체 지향과 코드의 (기능별)함수화가 얼마나 잘 되어 있느냐 또 코드가 얼마나 깔끔하냐가 중요함을 느꼈다. 생각보다 거의다 금방금방 해결했다.
 * 서버통신에선 전부 request(POST)를 하는 형태고 tomcat 서버에 spring을 사용했는데 처음에 국비과정에서 프로젝트를 재미있게 했던 것들이 백엔드 개발자들과의 소통에 많은 도움이 됐다.(도움도 주고)
-* retrofit에서 에러핸들링이 많이 미흡함을 느꼈다.(sealed class를 만들어서 하는게 좋은데...)
+* retrofit2 에서 generic으로 구현해서 네트워크를 편리하게 구현했다.
+```kotlin
+inline fun <T : OilDataInterface> callbackResult(
+    call: Call<T>,
+    crossinline remains: (Result<T>) -> Unit
+) {
+    call.enqueue(object : Callback<T> {
+        override fun onFailure(call: Call<T>, t: Throwable) {
+            remains(Result.Error(Exception(t.message)))
+        }
+
+        override fun onResponse(call: Call<T>, response: Response<T>) {
+
+            if (response.isSuccessful) {
+                if (response.body() == null) {
+                    remains(Result.Empty)
+                } else {
+                    remains(Result.Success(response.body()!!))
+                }
+            } else
+                remains(Result.Error(Exception("code : ${response.code()}")))
+        }
+    })
+}
+```
 * 여기는 테스트/빌드 자동화같은게 없어서 (낮에)필요하면 운영기를 새로고침하고 했는데 이로인해 리뷰의 빨간 줄들이 많이 생겼다. 안드로이드 개발할때도 테스트의 필요성은 느끼는데 이를 구현해놓기가 참 힘들었다. 우선 테스트 하기 좋은 코드가 아니었던게 첫 문제였던것 같다. 그리고 보통은 UI와 하드웨어와 서버를 테스트해야하는데 이걸 어떻게 해야하나 하면서 그냥 테스트를 직접 손으로 눈으로 했는데 이 시간이 정말 아까웠다.
 * 지도에서 주유소 마커에 나인패치 이미지를 놓고 또 지도를 줌 아웃하면 급 느려지는 현상이 있었는데 여기선 일정 zoom이면 그냥 클러스터 되게했다. 여기서 ClusterManger,ClusterManagerRenderer을 커스텀하면서 좀 느려지는 부분(이미지 전환)을 해결했다. 언젠가부터 느끼는 거지만 커스텀을 잘하는것과 직접구현을 할 수 있는 능력이 중요한것 같다. clusterManager을 addItems()를 할 때 나름 알고리즘을 짜서 좀 효율적으로 해보려 했으나 그것보다 clustermanager에서 알아서 캐쉬해줘서 전체 remove() 후 addItems()를 하는게 더 좋았는데 모르겠다. 내 알고리즘 실력이 부족했을 이유가 좀 컸다고 생각한다.(괜히 알고리즘 알고리즘 하는게 아니다.)
 * 요번에 바코드 인식에 zxing라이브러리를 사용했는데 인식이 잘 안된다는 고객의 컴플레인이 있었다. 그러면서 몇몇 어플과 MKKit를 사용한 앱을 다운받고 시도를 해봤는데 결론은 해당 바코드는 어디서든 잘 안찍혔다.(길기도 하고 흐리기도 하고 배경이 흰색이 아니고 다른 색의 글자들도 있고)그런데 그나마 mlkit를 사용한 것들은 좀 빨리 인식이됐다. 그래서 당장에 이걸 프로젝트에 적용은 못하지만 CameraX와 MLKit를 이용해 구현해 봤는데 처음 레퍼런스도 많이 없고 해서 좀 헤맸는데 구현하고 보니 별거 없었다. 이 역시 회사의 바코드는 잘 인식을 못했다.(내장 테스트,훈련(?)파일을 이용) 아마 구글 클라우드를 사용하는건 인식이 좀더 잘되지 않을까 싶다.
