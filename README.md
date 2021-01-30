@@ -114,13 +114,18 @@ inline fun <T : OilDataInterface> callbackResult(
 1. 구글 시계안의 타이머가 너무 불편해서
 2. 왜 이런 타이머는 없을까 싶어서... 
 
-![Alt Text](https://github.com/yegyu/android_portfolio/blob/master/gif/멀티타이머.gif)
+<img src="https://github.com/yegyu/android_portfolio/blob/master/gif/멀티타이머.gif" width="280"/>
  <br>
 
  
  ## 새찬송가
-
  ### 만든 이유
  1. 아빠가 만들어 달라고 하셔서
+<img src="https://github.com/yegyu/android_portfolio/blob/master/gif/hymn_gif.gif" width="280"/>
+<br>
+- 터치바로 이뮬레이터를 실행한 화면이라 클릭이 좀 부자연스러움
+
+<br>
+ 
  
 
