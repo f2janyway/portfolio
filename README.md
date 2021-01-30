@@ -59,7 +59,7 @@
 - 오일뱅크 앱을 리뉴얼하는 업무(New-Project부터 시작)
 - 안드로이드는 혼자 했지만 백엔드 개발자들과의 협업, 그리고 IOS개발자, 기획자와의 의사소통을 통해 역시 소통이 참 중요함을 느낌.
 <details>
-  <summary>상세 기술</summary>
+  <summary>상세 기술(記:기록할 기, 述:펼 술)</summary>
   
 <br>  
   
@@ -176,7 +176,7 @@ inline fun <T : OilDataInterface> callbackResult(
  사전 기능도 없음<br>
  
 <details>
-  <summary>기술 일부 상세</summary>
+  <summary>일부 상세 기술</summary>
   
 <br>
 
@@ -228,7 +228,7 @@ inline fun <T : OilDataInterface> callbackResult(
 1. 구글 시계안의 타이머가 너무 불편해서
 2. 왜 이런 타이머는 없을까 싶어서... 
 <details>
-  <summary>기술 일부 상세</summary>
+  <summary>일부 상세 </summary>
   
   <br>
   
