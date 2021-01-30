@@ -257,7 +257,7 @@ inline fun <T : OilDataInterface> callbackResult(
 
 <br>
 
-  </details>
+</details>
   
 <img src="https://github.com/yegyu/android_portfolio/blob/master/gif/멀티타이머.gif" width="280"/>
  <br>
