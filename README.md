@@ -43,10 +43,10 @@
 - 링크에 상세 있습니다.
 
 <br>
-
+ 
 - 블로그 : https://f2janyway.github.io/
 - github : https://github.com/f2janyway<br>
-- library: [link](https://github.com/f2janyway/custom_view)
+- library : [link](https://github.com/f2janyway/custom_view)
 
 
 <hr>
@@ -123,6 +123,7 @@ inline fun <T : OilDataInterface> callbackResult(
  1. 아빠가 만들어 달라고 하셔서
 <img src="https://github.com/yegyu/android_portfolio/blob/master/gif/hymn_gif.gif" width="280"/>
 <br>
+   
    터치바로 이뮬레이터를 실행한 화면이라 클릭이 좀 부자연스러움
 
 <br>
