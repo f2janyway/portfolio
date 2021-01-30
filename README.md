@@ -2,14 +2,47 @@
 
 ## 프로젝트
 
-[![image](https://user-images.githubusercontent.com/55625423/106105029-a6fc5a00-6186-11eb-96ec-ab05c9881e5a.png)](https://play.google.com/store/apps/details?id=com.hyundaioilbank.android&hl=ko) 오일뱅크 앱 : [링크](https://play.google.com/store/apps/details?id=com.hyundaioilbank.android&hl=ko) <br>
-[![image](https://user-images.githubusercontent.com/55625423/106109316-bbdbec00-618c-11eb-8597-c902ebc65135.png)](https://play.google.com/store/apps/details?id=com.box.bible&hl=ko)
-국한문성경 앱 : [링크](https://play.google.com/store/apps/details?id=com.box.bible) <br>
-[![image](https://user-images.githubusercontent.com/55625423/106109559-08272c00-618d-11eb-8e73-561e76845eff.png)](https://play.google.com/store/apps/details?id=com.box.firecast&hl=ko)
-멀티타이머 : [링크](https://play.google.com/store/apps/details?id=com.box.firecast) <br>
-[![image](https://user-images.githubusercontent.com/55625423/106109185-8fc06b00-618c-11eb-97e4-b917caeab559.png)](https://play.google.com/store/apps/details?id=com.box.hymn&hl=ko)
-새찬송가 앱 : [링크](https://play.google.com/store/apps/details?id=com.box.hymn&hl=ko) <br>
-[![image](https://user-images.githubusercontent.com/55625423/106109942-723fd100-618d-11eb-9b28-7e94ff794e57.png)](https://github.com/yegyu/DotNet) 국비과정 프로젝트(웹 + 인공지능)
+<pre>
+<a href="https://play.google.com/store/apps/details?id=com.hyundaioilbank.android&hl=ko">
+<img src="https://user-images.githubusercontent.com/55625423/106105029-a6fc5a00-6186-11eb-96ec-ab05c9881e5a.png" width="100"/>&nbsp오일뱅크 앱</a><br>
+</pre>
+- Kotlin
+- 2020/06~2020/11 (6개월)
+- coroutine, Retrofit2, Glide, Navigation-Component, Dagger2
+- sns 로그인 연동, kicc pg결제 연동,  Zeplin, GoogleMap, git
+- 오일뱅크 앱 리뉴얼로 안드로이드 앱(Kotlin)을 혼자 개발
+
+<pre>
+<a href="https://play.google.com/store/apps/details?id=com.box.bible&hl=ko">
+<img src="https://user-images.githubusercontent.com/55625423/106109316-bbdbec00-618c-11eb-8597-c902ebc65135.png" width="100"/>&nbsp국한문성경 앱</a><br>
+</pre>
+- Java : Kotlin = 73 : 27
+- 초기 개발 기간 10일 (19년 9월)
+- 지금까지 계속 유지보수 및 업그레이드 중
+
+<pre>
+<a href="https://play.google.com/store/apps/details?id=com.box.firecast">
+<img src="https://user-images.githubusercontent.com/55625423/106109559-08272c00-618d-11eb-8e73-561e76845eff.png" width="100"/>&nbsp멀티타이머 앱</a><br>
+</pre>
+-버전1 개발 기간 약 1주 (19년12월)
+  - Java
+-버전2 개발 기간 1주 (21년1월 중)
+  - Kotlin
+  
+<pre>
+<a href="https://play.google.com/store/apps/details?id=com.box.hymn&hl=ko">
+<img src="https://user-images.githubusercontent.com/55625423/106109185-8fc06b00-618c-11eb-97e4-b917caeab559.png" width="100"/>&nbsp새찬송가 앱</a><br>
+</pre>
+- 개발기간 하루
+- Kotlin
+
+<pre>
+<a href="https://github.com/yegyu/DotNet">
+<img src="https://user-images.githubusercontent.com/55625423/106109942-723fd100-618d-11eb-9b28-7e94ff794e57.png" width="100" padding-left="10"/>&nbsp국비과정 프로젝트(웹 + 인공지능)</a><br>
+</pre>
+- 링크에 상세 있습니다.
+
+
 github : https://github.com/f2janyway<br>
 library: [link](https://github.com/f2janyway/custom_view)
 
@@ -48,8 +81,6 @@ inline fun <T : OilDataInterface> callbackResult(
 ```
  
  ## 국한문 성경 
- * 언어 : <b>Java</b>-><b>Java : Kotlin = 9 : 1</b>-> 현재<b>Java : Kotlin = 7.5 : 2.5</b> 
- * 초기 개발 시간 : 안드로이드 처음 시작한 이후 10일(대략) 19/9/11-21 ( java )
  
  ### 만든 이유
  1. 한자성경을 읽고 싶었으나 없어서<br>
@@ -78,9 +109,6 @@ inline fun <T : OilDataInterface> callbackResult(
 
 <br><br>
 ## 멀티타이머
- * 언어 : 코틀린
- * 버전1 개발 기간 : 7 일 (대략)19/12/2-9
- * 버전2 개발 기간 : 7 일 21/1
 ### 만든 이유
 1. 구글 시계안의 타이머가 너무 불편해서
 2. 왜 이런 타이머는 없을까 싶어서... 
@@ -90,8 +118,7 @@ inline fun <T : OilDataInterface> callbackResult(
 
  
  ## 새찬송가
- * 코틀린(100%)
- * [code](https://github.com/f2janyway/hymn/tree/master/app/src/main/java/com/box/hymn)
+
  ### 만든 이유
  1. 아빠가 만들어달라고 해서
  
