@@ -43,8 +43,9 @@
 - 링크에 상세 있습니다.
 
 
-github : https://github.com/f2janyway<br>
-library: [link](https://github.com/f2janyway/custom_view)
+- 블로그 : https://f2janyway.github.io/
+- github : https://github.com/f2janyway<br>
+- library: [link](https://github.com/f2janyway/custom_view)
 
 
 ## 취업후 경험 및 경력기술(20/2~20/11) 
