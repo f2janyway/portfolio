@@ -121,6 +121,6 @@ inline fun <T : OilDataInterface> callbackResult(
  ## 새찬송가
 
  ### 만든 이유
- 1. 아빠가 만들어달라고 해서
+ 1. 아빠가 만들어 달라고 하셔서
  
 
