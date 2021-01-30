@@ -24,9 +24,9 @@
 <a href="https://play.google.com/store/apps/details?id=com.box.firecast">
 <img src="https://user-images.githubusercontent.com/55625423/106109559-08272c00-618d-11eb-8e73-561e76845eff.png" width="100"/>&nbsp멀티타이머 앱</a><br>
 </pre>
--버전1 개발 기간 약 1주 (19년12월)
+- 버전1 개발 기간 약 1주 (19년12월)
   - Java
--버전2 개발 기간 1주 (21년1월 중)
+- 버전2 개발 기간 1주 (21년1월 중)
   - Kotlin
   
 <pre>
