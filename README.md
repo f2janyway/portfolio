@@ -1,23 +1,15 @@
 # android_portfolio
 
-
-### index
- 1. 실무 프로젝트
- 2. 국한문성경
- 3. 멀티타이머
- 4. 새찬송가 앱
- 5. (추가자료)인공지능 전문가 국비과정 프로젝트(19/4~19/10 7개월과정) [.Net](https://github.com/yegyu/DotNet)
-
-
 ## 프로젝트
 
-[![image](https://user-images.githubusercontent.com/55625423/106105029-a6fc5a00-6186-11eb-96ec-ab05c9881e5a.png)](https://play.google.com/store/apps/details?id=com.hyundaioilbank.android&hl=ko) 오일뱅크 앱 : https://play.google.com/store/apps/details?id=com.hyundaioilbank.android&hl=ko <br>
+[![image](https://user-images.githubusercontent.com/55625423/106105029-a6fc5a00-6186-11eb-96ec-ab05c9881e5a.png)](https://play.google.com/store/apps/details?id=com.hyundaioilbank.android&hl=ko) 오일뱅크 앱 : [링크](https://play.google.com/store/apps/details?id=com.hyundaioilbank.android&hl=ko) <br>
 [![image](https://user-images.githubusercontent.com/55625423/106109316-bbdbec00-618c-11eb-8597-c902ebc65135.png)](https://play.google.com/store/apps/details?id=com.box.bible&hl=ko)
-국한문성경 앱 : https://play.google.com/store/apps/details?id=com.box.bible <br>
+국한문성경 앱 : [링크](https://play.google.com/store/apps/details?id=com.box.bible) <br>
 [![image](https://user-images.githubusercontent.com/55625423/106109559-08272c00-618d-11eb-8e73-561e76845eff.png)](https://play.google.com/store/apps/details?id=com.box.firecast&hl=ko)
-멀티타이머 : https://play.google.com/store/apps/details?id=com.box.firecast <br>
+멀티타이머 : [링크](https://play.google.com/store/apps/details?id=com.box.firecast) <br>
 [![image](https://user-images.githubusercontent.com/55625423/106109185-8fc06b00-618c-11eb-97e4-b917caeab559.png)](https://play.google.com/store/apps/details?id=com.box.hymn&hl=ko)
-새찬송가 앱 : https://play.google.com/store/apps/details?id=com.box.hymn&hl=ko <br>
+새찬송가 앱 : [링크](https://play.google.com/store/apps/details?id=com.box.hymn&hl=ko) <br>
+[![image](https://user-images.githubusercontent.com/55625423/106109942-723fd100-618d-11eb-9b28-7e94ff794e57.png)](https://github.com/yegyu/DotNet) 국비과정 프로젝트(웹 + 인공지능)
 github : https://github.com/f2janyway<br>
 library: [link](https://github.com/f2janyway/custom_view)
 
