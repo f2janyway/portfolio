@@ -49,7 +49,9 @@
 - library: [link](https://github.com/f2janyway/custom_view)
 
 
-### 첫 실무 프로젝트
+<hr>
+
+## 첫 실무 프로젝트
 - 오일뱅크 앱을 리뉴얼하는 업무(New-Project부터 시작)
 - 안드로이드는 혼자 했지만 백엔드 개발자들과의 협업, 그리고 IOS개발자, 기획자와의 의사소통을 통해 역시 소통이 참 중요함을 느낌.
 
@@ -121,7 +123,7 @@ inline fun <T : OilDataInterface> callbackResult(
  1. 아빠가 만들어 달라고 하셔서
 <img src="https://github.com/yegyu/android_portfolio/blob/master/gif/hymn_gif.gif" width="280"/>
 <br>
-- 터치바로 이뮬레이터를 실행한 화면이라 클릭이 좀 부자연스러움
+   터치바로 이뮬레이터를 실행한 화면이라 클릭이 좀 부자연스러움
 
 <br>
  
