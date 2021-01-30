@@ -124,7 +124,7 @@ inline fun <T : OilDataInterface> callbackResult(
 <img src="https://github.com/yegyu/android_portfolio/blob/master/gif/hymn_gif.gif" width="280"/>
 <br>
    
-   터치바로 이뮬레이터를 실행한 화면이라 클릭이 좀 부자연스러움
+>터치바로 이뮬레이터를 실행한 화면이라 클릭이 좀 부자연스러움
 
 <br>
  
