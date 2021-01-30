@@ -64,7 +64,9 @@
 * 각 Activity에 기본적으로 Retrofit을 이용한 네트워크 통신이 있었기에 
 * ViewModel이 하나씩 있었고 그 안에서 기능별 Repository를 나눠 나름대로 기능을 분류해 구현했습니다.
     * (EventRepository, StationRepository, UserRepository 등등 )
+    
 <br>
+
 * ViewModel 안에서 MutableLiveData 를 private LiveData의 getter로 backing property 해주는 패턴으로 구현했습니다.
 * 그리고 private val MutableLiveData를 repository 메서드에 파라미터로 넣어 
 * repository에서 Retrofit2으로 response를 받아 파라미터에 setValue() 하여
@@ -169,6 +171,33 @@ inline fun <T : OilDataInterface> callbackResult(
  5000원 앱과 그냥 종이 한자 성경 스캔해 놓은것은 있었으나 사용하기 불편했음<br>
  사전 기능도 없음<br>
  
+<details>
+  <summary>기술 일부 상세</summarys>
+  
+<br>
+
+* 한자와 한글이 적혀 있는 텍스트 파일(한자가 많이 미흡하고 오타도 많은)을 구해서
+* 텍스트 파일을 Java로 `권`마다 나누고 또 각 `권`의 각 `장`으로 나누는 작업을 해서
+* (성경.text -> 창세기/(1장, 2장...), 출애굽기/(1장, 2장…),...)의 형태로 나누고
+* 또 각 `장`의 한자만 나누고 
+* 그 한자들을 Python으로 크롤링 해서 한자의 이름과 뜻을 장마다 
+* .txt 로 만들어서 
+* 한자 사전용 파일을 만들어 일차적으로 기타 구현들을 하여 앱을 만들었습니다.
+
+<br>
+
+* 오타와 미흡한 한자가 많아서 
+* 최대한 많은 1)`최대한 한자 수정을 한 파일`과 
+* 다시 완전히 오타가 없는 2) `한글 성경 파일`을 크롤링해서 자료를 구하여 
+* 2) 에다가 한글을 대조하여 한자를 집어넣는 작업을 수행했습니다.
+* 이 알고리즘 작업에서 굉장히 머리를 많이 썼던 기억이 납니다.
+* 이후에 오타는 전혀 없으나 한자를 넣는 작업 중
+* 성경 전체를 완벽히 커버 하지는 못해서
+* 여러 이용자의 도움을 받아 지금은 거의 빠진 한자나 오류 한자가 없습니다.(추정)
+
+</details>
+  
+ 
  ![Alt Text](https://github.com/yegyu/android_portfolio/blob/master/gif/b1_1.gif)
  <br>
  >ViewModel  + LiveData + RoomDatabase + Dao -> 간편 하이라이트 기능
@@ -194,7 +223,38 @@ inline fun <T : OilDataInterface> callbackResult(
 ### 만든 이유
 1. 구글 시계안의 타이머가 너무 불편해서
 2. 왜 이런 타이머는 없을까 싶어서... 
+<details>
+  <summary>기술 일부 상세</summary>
+  
+  <br>
+  
+* rx를 적용하고 TDD를 연습하려고 한 작업입니다.
+* rxJava를 이용하지 않았고 Flow를 이용했습니다. 
+* 또한, 간단한 커스텀 뷰가 들어가 있습니다. (CircleProgress)
+* TDD원칙대로 테스트->구현을 순서대로 하진 못했습니다. 
 
+<br>
+
+* 각 타이머가 한 클래스를 이루고 
+* View는 Presenter 방식으로 RecyclerView의 아이템으로 bind() 해주었습니다. 
+
+<br>
+
+* 리사이클러뷰 사용 시 
+* 뷰를 재활용해서 여러 타이머를 만들고 
+* recycle 할 때 뷰의 참조를 잘 맞추는 게 중요했습니다.
+* (다시 해당 position에 와도 타이머가 진행 중이면 진행하고 있어야 하듯이)
+
+<br>
+
+* 알람 음을 사용하기 위해 contentsResolver를 이용해
+* external 및 internal 음악, 벨소리를 query 해서
+* uri를 구하고 알림을 구현했습니다. 
+
+<br>
+
+  </details>
+  
 <img src="https://github.com/yegyu/android_portfolio/blob/master/gif/멀티타이머.gif" width="280"/>
  <br>
 
