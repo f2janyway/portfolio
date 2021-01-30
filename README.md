@@ -55,7 +55,7 @@
 - 오일뱅크 앱을 리뉴얼하는 업무(New-Project부터 시작)
 - 안드로이드는 혼자 했지만 백엔드 개발자들과의 협업, 그리고 IOS개발자, 기획자와의 의사소통을 통해 역시 소통이 참 중요함을 느낌.
 
-## 유용한 코드
+#### 프로젝트 속의 메서드 
 ```kotlin
 inline fun <T : OilDataInterface> callbackResult(
     call: Call<T>,
