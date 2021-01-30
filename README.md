@@ -1,5 +1,9 @@
 # Portfolio
 
+### 목차
+* 프로젝트 리스트
+* 각 프로젝트 설명
+
 ## 프로젝트
 
 <pre>
@@ -172,7 +176,7 @@ inline fun <T : OilDataInterface> callbackResult(
  사전 기능도 없음<br>
  
 <details>
-  <summary>기술 일부 상세</summarys>
+  <summary>기술 일부 상세</summary>
   
 <br>
 
