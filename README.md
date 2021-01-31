@@ -66,15 +66,15 @@
 * MVVM 구조와 AAC를 이용해서 개발을 진행했습니다.
 * Navigation을 이용해서 기능(메인, 쿠폰, 지도 등등)별 Single Activity로 구현했습니다.
 * 각 Activity에 기본적으로 Retrofit을 이용한 네트워크 통신이 있었기에 
-* ViewModel이 하나씩 있었고 그 안에서 기능별 Repository를 나눠 나름대로 기능을 분류해 구현했습니다.
-    * (EventRepository, StationRepository, UserRepository 등등 )
+<br> ViewModel이 하나씩 있었고 <br>그 안에서 기능별 Repository를 나눠 나름대로 기능을 분류해 구현했습니다.
+    <br> (EventRepository, StationRepository, UserRepository 등등 )
     
 <br>
 
 * ViewModel 안에서 MutableLiveData 를 private LiveData의 getter로 backing property 해주는 패턴으로 구현했습니다.
-* 그리고 private val MutableLiveData를 repository 메서드에 파라미터로 넣어 
-* repository에서 Retrofit2으로 response를 받아 파라미터에 setValue() 하여
-* Activity or Fragment 에서 observe(Owner){} 방식으로 구현했습니다.
+<br> 그리고 private val MutableLiveData를 repository 메서드에 파라미터로 넣어 
+<br> repository에서 Retrofit2으로 response를 받아 파라미터에 setValue() 하여
+<br> Activity or Fragment 에서 observe(Owner){} 방식으로 구현했습니다.
 
 <br>
 
@@ -83,21 +83,21 @@
 <br>
 
 * 중복되는 xml의 경우 include를 이용해 중복을 줄였고 
-* 그 view에서 databinding을 사용할 경우 @BindingAdapter을 이용해 분기하는 부분이 있었는데
-* 해당 xml이 세 군데 이상일 경우는 복잡도가 증가해  
-* @BindingAdapter 사용하지 않았습니다. 
+<br> 그 view에서 databinding을 사용할 경우 @BindingAdapter을 이용해 분기하는 부분이 있었는데
+<br> 해당 xml이 세 군데 이상일 경우는 복잡도가 증가해  
+<br> @BindingAdapter를 사용하지 않았습니다. 
 * 사실 두 군데만 사용해도 추후 이해하는 데 어려움이 있어서 
-* include 부분에서는 variable 변수명을 제대로 만들고 
-* 나중에는  dataBinding을 사용하지 않는 방향으로 변경했습니다.
+<br> include 부분에서는 variable 변수명을 제대로 만들고 
+<br> 나중에는  dataBinding을 사용하지 않는 방향으로 변경했습니다.
 
 <br>
 
 * retrofit enqueue를 제네릭으로 구현(아래 코드)하여
-* Result 로 감싸고 View단에서 when 분기하여 각 응답을 처리하는 구조로 되었습니다.
-* Retrofit Result(response.body) ->(Success, Error 등 분기하여)
-* Repository ->
-* ViewModel ->
-* Activity or Fragment 에서 when(result){} 처리
+<br> Result 로 감싸고 View단에서 when 분기하여 각 응답을 처리하는 구조로 되었습니다.
+<br> Retrofit Result(response.body) ->(Success, Error 등 분기하여)
+<br> Repository ->
+<br> ViewModel ->
+<br> Activity or Fragment 에서 when(result){} 처리
 
 <br>
 
@@ -106,30 +106,30 @@
 <br>
 
 * MVVM 구조로 최대한 각 관심사를 분리하려 노력하였고
-* 이런 구조로 되어있어 기능 추가 및 유지보수가 좀 수월함을 느꼈습니다.
-* 정확히 기억은 안 나는데 대략 
-* 8월 기본 앱 게시(이벤트, 지도, 멤버십결제 등등)
-* 9월 회원가입, 회원정보수정 등 추가
-* 11월 선결제, 주유 가격 등 추가 
-* 이런 식으로 계속 업그레이드를 했는데 생각보다 어렵지 않았습니다. 
+<br> 이런 구조로 되어있어 기능 추가 및 유지보수가 좀 수월함을 느꼈습니다.
+<br> 정확히 기억은 안 나는데 대략 
+<br>* 8월 기본 앱 게시(이벤트, 지도, 멤버십결제 등등)
+<br>* 9월 회원가입, 회원정보수정 등 추가
+<br>* 11월 선결제, 주유 가격 등 추가 
+<br> 이런 식으로 계속 업그레이드를 했는데 생각보다 어렵지 않았습니다. 
 
 <br>
 
 * 이미지 작업에서 제플린을 처음 사용해봤는데 
-* shell을 이용해 이미지들이 각 사이즈별(hdpi,mdpi...) drawable에 넣어 편리하게 사용했습니다. 
+<br> shell을 이용해 이미지들이 각 사이즈별(hdpi,mdpi...) drawable에 넣어 편리하게 사용했습니다. 
 
 <br>
 
 * PG결제 모듈을 이용해 세차 멤버십이나 선결제 등 구현했습니다.
-* 결제 기능은 웹뷰를 통해 구현 하였고 이는 거의 참고문서를 보고했습니다. 
+<br> 결제 기능은 웹뷰를 통해 구현 하였고 이는 거의 참고문서를 보고했습니다. 
 
 <br>
 
 * 영수증을 바코드로 찍어 누락 포인트 적립하는 기능이 있었는데
-* Kicc모듈에서 계속 릴리즈 .apk로 실행하면 
-* 버그가 나서 Crashlytics 로그를 보니 계속 Kicc 모듈에서 로그가 찍혀서
-* '내 문제가 아니고 모듈문제'라고 계속 생각하다가 proguard 로 인해 모듈참조를 못 함을 알고
-* -keep ~을 작성해서 문제를 해결했습니다.
+<br> Kicc모듈에서 계속 릴리즈 .apk로 실행하면 
+<br> 버그가 나서 Crashlytics 로그를 보니 계속 Kicc 모듈에서 로그가 찍혀서
+<br> '내 문제가 아니고 모듈문제'라고 계속 생각하다가 proguard 로 인해 모듈참조를 못 함을 알고
+<br> -keep ~을 작성해서 문제를 해결했습니다.
 <br>
 
 </details>
@@ -174,23 +174,23 @@ inline fun <T : OilDataInterface> callbackResult(
 <br>
 
 * 한자와 한글이 적혀 있는 텍스트 파일(한자가 많이 미흡하고 오타도 많은)을 구해서
-* 텍스트 파일을 Java로 `권`마다 나누고 또 각 `권`의 각 `장`으로 나누는 작업을 해서
-* (성경.text -> 창세기/(1장, 2장...), 출애굽기/(1장, 2장…),...)의 형태로 나누고
-* 또 각 `장`의 한자만 나누고 
-* 그 한자들을 Python으로 크롤링 해서 한자의 이름과 뜻을 장마다 
-* .txt 로 만들어서 
-* 한자 사전용 파일을 만들어 일차적으로 기타 구현들을 하여 앱을 만들었습니다.
+<br> 텍스트 파일을 Java로 `권`마다 나누고 또 각 `권`의 각 `장`으로 나누는 작업을 해서
+<br> (성경.text -> 창세기/(1장, 2장...), 출애굽기/(1장, 2장…),...)의 형태로 나누고
+<br> 또 각 `장`의 한자만 나누고 
+<br> 그 한자들을 Python으로 크롤링 해서 한자의 이름과 뜻을 장마다 
+<br> .txt 로 만들어서 
+<br> 한자 사전용 파일을 만들어 일차적으로 기타 구현들을 하여 앱을 만들었습니다.
 
 <br>
 
 * 오타와 미흡한 한자가 많아서 
-* 최대한 많은 1)`최대한 한자 수정을 한 파일`과 
-* 다시 완전히 오타가 없는 2) `한글 성경 파일`을 크롤링해서 자료를 구하여 
-* `2)` 에다가 한글을 대조하여 한자를 집어넣는 작업을 수행했습니다.
+<br> 최대한 많은 1)`최대한 한자 수정을 한 파일`과 
+<br> 다시 완전히 오타가 없는 2) `한글 성경 파일`을 크롤링해서 자료를 구하여 
+<br> `2)` 에다가 한글을 대조하여 한자를 집어넣는 작업을 수행했습니다.
 * 이 알고리즘 작업에서 굉장히 머리를 많이 썼던 기억이 납니다.
 * 이후에 오타는 전혀 없으나 한자를 넣는 작업 중
-* 성경 전체를 완벽히 커버 하지는 못해서
-* 여러 이용자의 도움을 받아 지금은 거의 빠진 한자나 오류 한자가 없습니다.(추정)
+<br> 성경 전체를 완벽히 커버 하지는 못해서
+<br> 여러 이용자의 도움을 받아 지금은 거의 빠진 한자나 오류 한자가 없습니다.(추정)
 
 </details>
   
@@ -233,20 +233,20 @@ inline fun <T : OilDataInterface> callbackResult(
 <br>
 
 * 각 타이머가 한 클래스를 이루고 
-* View는 Presenter 방식으로 RecyclerView의 아이템으로 bind() 해주었습니다. 
+<br> View는 Presenter 방식으로 RecyclerView의 아이템으로 bind() 해주었습니다. 
 
 <br>
 
 * 리사이클러뷰 사용 시 
-* 뷰를 재활용해서 여러 타이머를 만들고 
-* recycle 할 때 뷰의 참조를 잘 맞추는 게 중요했습니다.
-* (다시 해당 position에 와도 타이머가 진행 중이면 진행하고 있어야 하듯이)
+<br> 뷰를 재활용해서 여러 타이머를 만들고 
+<br> recycle 할 때 뷰의 참조를 잘 맞추는 게 중요했습니다.
+<br> (다시 해당 position에 와도 타이머가 진행 중이면 진행하고 있어야 하듯이)
 
 <br>
 
 * 알람 음을 사용하기 위해 contentsResolver를 이용해
-* external 및 internal 음악, 벨소리를 query 해서
-* uri를 구하고 알림을 구현했습니다. 
+<br> external 및 internal 음악, 벨소리를 query 해서
+<br> uri를 구하고 알림을 구현했습니다. 
 
 <br>
 
