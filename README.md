@@ -85,7 +85,7 @@
 * 중복되는 xml의 경우 include를 이용해 중복을 줄였고 
 <br> 그 view에서 databinding을 사용할 경우 @BindingAdapter을 이용해 분기하는 부분이 있었는데
 <br> 해당 xml이 세 군데 이상일 경우는 복잡도가 증가해  
-<br> @BindingAdapter를 사용하지 않았습니다. 
+<br>@BindingAdapter를 사용하지 않았습니다. 
 * 사실 두 군데만 사용해도 추후 이해하는 데 어려움이 있어서 
 <br> include 부분에서는 variable 변수명을 제대로 만들고 
 <br> 나중에는  dataBinding을 사용하지 않는 방향으로 변경했습니다.
@@ -221,7 +221,7 @@ inline fun <T : OilDataInterface> callbackResult(
 1. 구글 시계안의 타이머가 너무 불편해서
 2. 왜 이런 타이머는 없을까 싶어서... 
 <details>
-  <summary>일부 상세 </summary>
+  <summary>일부 상세 기술</summary>
   
   <br>
   
