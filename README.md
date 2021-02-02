@@ -64,7 +64,7 @@
 <br>  
   
 * MVVM 구조와 AAC를 이용해서 개발을 진행했습니다.
-* Navigation을 이용해서 기능(메인, 쿠폰, 지도 등등)별 Single Activity로 구현했습니다.
+* Navigation을 이용해서 기능(메인, , 지도 등등)별 Single Activity로 구현했습니다.
 * 각 Activity에 기본적으로 Retrofit을 이용한 네트워크 통신이 있었기에 
 <br> ViewModel이 하나씩 있었고 <br>그 안에서 기능별 Repository를 나눠 나름대로 기능을 분류해 구현했습니다.
     <br> (EventRepository, StationRepository, UserRepository 등등 )
