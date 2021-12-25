@@ -44,7 +44,7 @@
 
 <br>
  
-- 블로그 : https://f2janyway.github.io/ (꾸준히 하기가 힘들지...)
+- 블로그 : https://f2janyway.github.io/
 - github : https://github.com/f2janyway<br>
 
 
