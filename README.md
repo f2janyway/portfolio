@@ -2,6 +2,14 @@
 
 
 ## 프로젝트
+<pre>
+<a href="https://play.google.com/store/apps/details?id=brace.formation">
+<img src="https://play-lh.googleusercontent.com/qkbrIh-QBjYCGkidauZpIF2_KRC3Lau1ZErEAL1xkhXsA6XGR--tiJeSSHzAB4LWuzw=w240-h480-rw" width="100"/>&nbsp포메이션</a><br>
+</pre>
+- 축구용품 및 레플리카 중고거래 , 축구경기,동호회 관련 앱 (한마디로 축구관련앱)
+- Kotlin
+- (Android) 외주 개발로 반정도 개발된 상태에서 이어서 개발 및 유지보수
+- IOS 버전도 외주개발로 7~80% 된 상태에서 이어서 개발(21/12 기준 출시 안됨)
 
 <pre>
 <a href="https://play.google.com/store/apps/details?id=com.hyundaioilbank.android&hl=ko">
