@@ -44,7 +44,6 @@
 
 <br>
  
-- 블로그 : https://f2janyway.github.io/
 - github : https://github.com/f2janyway<br>
 
 
