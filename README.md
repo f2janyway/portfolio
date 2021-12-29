@@ -1,5 +1,3 @@
-# Portfolio
-
 
 ## 프로젝트
 <pre>
@@ -25,30 +23,29 @@
 <a href="https://play.google.com/store/apps/details?id=com.box.bible&hl=ko">
 <img src="https://user-images.githubusercontent.com/55625423/106109316-bbdbec00-618c-11eb-8597-c902ebc65135.png" width="100"/>&nbsp국한문성경 앱</a><br>
 </pre>
-- Java : Kotlin = 1 : 1 
-- 초기 개발 기간 10일 (19년 9월)
+- 처음으로 만든 앱
+- 매우 열정적이었음
+- 간간히 리팩토링 중 (java->kotlin)
 
 <pre>
 <a href="https://play.google.com/store/apps/details?id=com.box.firecast">
 <img src="https://user-images.githubusercontent.com/55625423/106109559-08272c00-618d-11eb-8e73-561e76845eff.png" width="100"/>&nbsp멀티타이머 앱</a><br>
 </pre>
-- 버전1 개발 기간 약 1주 (19년12월)
-  - Java
-- 버전2 개발 기간 1주 (21년1월 중)
-  - Kotlin
+- 개발 계기: 구글 시계를 주로 사용하는데 타이머가 불편해서
+- 기술적 학습 목표: customView, 타이머, 사운드(알람) 구현 
   
 <pre>
 <a href="https://play.google.com/store/apps/details?id=com.box.hymn&hl=ko">
 <img src="https://user-images.githubusercontent.com/55625423/106109185-8fc06b00-618c-11eb-97e4-b917caeab559.png" width="100"/>&nbsp새찬송가 앱</a><br>
 </pre>
 - 개발기간 하루
-- Kotlin
+- 부모님의 부탁으로 만듬 (스캔이 오래 걸림)
 
 <pre>
 <a href="https://github.com/yegyu/DotNet">
 <img src="https://user-images.githubusercontent.com/55625423/106109942-723fd100-618d-11eb-9b28-7e94ff794e57.png" width="100" padding-left="10"/>&nbsp국비과정 프로젝트(웹 + 인공지능)</a><br>
 </pre>
-- 링크에 상세 있습니다.
+
 
 <br>
  
