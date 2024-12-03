@@ -1,5 +1,3 @@
-# Portfolio
-
 
 <img src="https://play-lh.googleusercontent.com/ljG2ejI0uQ1moniIniX8nnDQOKPyab28u484RxpByrGhsli2jLwBeCJLMF6ymeD7IfE=w480-h960-rw" width="100"/>
 <a href="https://play.google.com/store/apps/details?id=brace.formation">
@@ -65,7 +63,7 @@ ___
 <a href="https://github.com/yegyu/DotNet">
 <img src="https://user-images.githubusercontent.com/55625423/106109942-723fd100-618d-11eb-9b28-7e94ff794e57.png" width="100" padding-left="10"/>&nbsp국비과정 프로젝트(웹 + 인공지능)</a><br>
 </pre>
-- 링크에 상세 있습니다.
+
 
 <br>
  
