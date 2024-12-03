@@ -33,7 +33,7 @@
 - 버전1 java 100% (xml 100%), 2019
 - 버전2 kotlin 100% 
 - 버전3 compose: xml = 8:2
-- 버전4 kmp
+- 버전4 kmp(kotlin + android + ios(swiftui))
 - ios는 비용문제로 미출시
 
 <!-- <img src="https://github.com/user-attachments/assets/83a4384a-f579-4aec-8234-7bca27c949e9" width="40%" />
